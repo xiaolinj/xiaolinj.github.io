@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Your Name - Research Homepage</title>
+  <title>Xiaolin Jiang - Research Homepage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,11 +15,12 @@
         <li><a href="#publications">Publications</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
       </ul>
     </nav>
     <div class="header-content">
-      <h1>Dr. Your Name</h1>
-      <h2>Your Position | Your Institution</h2>
+      <h1>Xiaolin Jiang</h1>
+      <h2>Ph.D. in Computer Science | UC Riverside</h2>
     </div>
   </header>
 
@@ -27,40 +28,97 @@
     <!-- ABOUT SECTION -->
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I'm Dr. Your Name, a [Your Position] at [Your Institution] where I focus on [Your Research Topic]. 
-         I am passionate about bridging theoretical frameworks with practical applications. In my lab, we’re 
-         exploring ways to [brief summary of your research goal].</p>
+      <p>Hello! I'm Xiaolin Jiang, a Ph.D. graduate from the University of California, Riverside,
+         focusing on efficient graph query evaluation and large-scale data processing. I am now
+         working at Google as a Software Engineer on the Global Network Team.</p>
+
+      <!-- EDUCATION -->
+      <h3>Education</h3>
+      <p><strong>University of California, Riverside (3.8/4.0), Riverside, CA</strong><br/>
+         Ph.D. in Computer Science (Sep. 2017 – Aug. 2023)<br/>
+         Advisor: Rajiv Gupta<br/>
+         Dissertation: Reuse Techniques for Efficiently Evaluating a Sequence of Iterative Graph Queries
+      </p>
+      <p><strong>Shandong University (86.5/100), Jinan, China</strong><br/>
+         B.E. in Computer Science and Technology, Excellent class (Sep. 2013 – Jun. 2017)
+      </p>
+
+      <!-- WORK EXPERIENCE -->
+      <h3>Work Experience</h3>
+      <p><strong>Google, LLC, Sunnyvale, CA</strong><br/>
+         Software Engineer, Global Network Team (Aug. 2023 – Present)
+      </p>
+
+      <p><strong>Google, LLC, Sunnyvale, CA</strong><br/>
+         Research Intern, Cloud Net Infra Team (Jun. 2022 – Sep. 2022)
+      </p>
+      <ul>
+        <li>Built software path between NVMe initiator and target devices via RPC framework</li>
+        <li>Supported asynchronous requests in bidirectional streaming RPC client side</li>
+        <li>Implemented R/W and admin commands in memory-mapped backend storage</li>
+      </ul>
+
+      <p><strong>Google, LLC, Mountain View, CA</strong><br/>
+         Software Engineering Intern, GCP BQML Team (Sep. 2021 – Dec. 2021)
+      </p>
+      <ul>
+        <li>Worked on time series models performance improvement projects</li>
+        <li>Focused on fast time series forecasting using a subset of data</li>
+      </ul>
+
+      <p><strong>Pinterest, Inc, San Francisco, CA</strong><br/>
+         Research Intern, Storage and Caching Team (Jun. 2020 – Sep. 2020)
+      </p>
+      <ul>
+        <li>Developed a tool to increase the robustness and reliability of cache infrastructure</li>
+        <li>Designed and implemented loading protocols for abstractions in trace files and real workloads</li>
+        <li>Generated synthetic workloads and profiled server performance characteristics</li>
+        <li>Captured live traffic and replayed real workloads on test servers</li>
+      </ul>
     </section>
 
     <!-- RESEARCH SECTION -->
     <section id="research">
       <h2>Research</h2>
-      <h3>Research Interests</h3>
-      <ul>
-        <li><strong>Topic 1:</strong> Brief description</li>
-        <li><strong>Topic 2:</strong> Brief description</li>
-        <li><strong>Topic 3:</strong> Brief description</li>
-      </ul>
-
-      <h3>Current Projects</h3>
-      <ol>
-        <li><strong>Project Title 1</strong> - One or two sentences about your project.</li>
-        <li><strong>Project Title 2</strong> - Short description of key aspects.</li>
-      </ol>
+      <!-- Selected Research Experience -->
+      <h3>Selected Research Experience</h3>
+      <p><strong>Exploiting Critical Edges of Large Graphs Processing on GPUs (Oct. 2020 – Aug. 2021)</strong><br/>
+         Computed on selected edges (≈ 11%) while maintaining ≥94% stable rates for 6 benchmarks
+      </p>
+      <p><strong>Fast Evaluation of a Stream of Queries via Graph Triangle Inequality (Jul. 2018 – Aug. 2019)</strong><br/>
+         Developed SIMPLE reuse algorithm and updated it to 2STEP, reducing 99.99% computation and 
+         achieving 266X speedup for SSWP
+      </p>
     </section>
 
     <!-- PUBLICATIONS SECTION -->
     <section id="publications">
       <h2>Publications</h2>
-      <h3>Peer-Reviewed Articles</h3>
       <ul>
-        <li>LastName, FirstName (Year). <em>Article Title</em>. Journal Name, Vol(Issue), Pages.</li>
-        <li>LastName, FirstName (Year). <em>Article Title</em>. Journal Name, Vol(Issue), Pages.</li>
-      </ul>
-
-      <h3>Conference Proceedings</h3>
-      <ul>
-        <li>LastName, FirstName (Year). <em>Talk Title</em>. Conference Name, Location.</li>
+        <li><strong>[EuroSys’24]</strong> CoreGraph: Exploiting Recurring Critical Edges in the Evaluation of Iterative Graph Queries<br/>
+            <em>Xiaolin Jiang*, Mahbod Afarin*, Zhijia Zhao, Nael Abu-Ghazaleh, Rajiv Gupta</em><br/>
+            Proceedings of the European Conference on Computer Systems, Athens, Greece, April 2024
+        </li>
+        <li><strong>[JPDC’22]</strong> SimGQ+: Simultaneously Evaluating Iterative Point-to-All and Point-to-Point Graph Queries<br/>
+            <em>Chengshuo Xu, Abbas Mazloumi, Xiaolin Jiang, Rajiv Gupta</em><br/>
+            Journal of Parallel and Distributed Computing, 2022
+        </li>
+        <li><strong>[SIGOPS OSR’21]</strong> VRGQ: Evaluating a Stream of Iterative Graph Queries via Value Reuse<br/>
+            <em>Xiaolin Jiang, Chengshuo Xu, Rajiv Gupta</em><br/>
+            ACM SIGOPS Operating Systems Review, 2021
+        </li>
+        <li><strong>[EuroSys’21]</strong> Tripoline: Generalized Incremental Graph Processing via Graph Triangle Inequality<br/>
+            <em>Xiaolin Jiang*, Chengshuo Xu*, Xizhe Yin*, Zhijia Zhao, Rajiv Gupta</em><br/>
+            Proceedings of the 16th European Conference on Computer Systems, 2021
+        </li>
+        <li><strong>[HiPC’20, Best Paper]</strong> SimGQ: Simultaneously Evaluating Iterative Graph Queries<br/>
+            <em>Chengshuo Xu, Abbas Mazloumi, Xiaolin Jiang, Rajiv Gupta</em><br/>
+            IEEE International Conference on High Performance Computing, Data, and Analytics, 2020
+        </li>
+        <li><strong>[BigData’19]</strong> MultiLyra: Scalable Distributed Evaluation of Batches of Iterative Graph Queries<br/>
+            <em>Abbas Mazloumi, Xiaolin Jiang, Rajiv Gupta</em><br/>
+            IEEE International Conference on Big Data, LA, CA, 2019
+        </li>
       </ul>
     </section>
 
@@ -68,25 +126,48 @@
     <section id="teaching">
       <h2>Teaching Experience</h2>
       <ul>
-        <li><strong>Course Title (Semester/Year):</strong> Short description of the course, topics covered, etc.</li>
-        <li><strong>Course Title (Semester/Year):</strong> Short description.</li>
+        <li><strong>CS 152 - Compiler Design (Mar. 2022 – Jun. 2022):</strong> Teaching Assistant</li>
+        <li><strong>CS 177 - Modeling and Simulation (Jan. 2019 – Mar. 2019):</strong> Teaching Assistant</li>
+        <li><strong>CS 141 - Intermediate Data Structures and Algorithms (Sep. 2018 – Dec. 2018):</strong> Teaching Assistant</li>
       </ul>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>If you have any questions or would like to discuss potential collaborations, feel free to reach out via:</p>
       <ul>
-        <li><strong>Email:</strong> <a href="mailto:youremail@domain.com">youremail@domain.com</a></li>
-        <li><strong>Office Address:</strong> Room 123, Science Building, Your University</li>
-        <li><strong>Social Links:</strong> <a href="https://scholar.google.com">Google Scholar</a> | <a href="https://orcid.org">ORCID</a> | <a href="https://linkedin.com">LinkedIn</a></li>
+        <li><strong>Email:</strong> <a href="mailto:xiaolinjiang23@gmail.com">xiaolinjiang23@gmail.com</a></li>
+        <li><strong>Phone:</strong> +1 (951) 786-8815</li>
+        <li><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/xlin23/" target="_blank" rel="noopener noreferrer">
+            https://www.linkedin.com/in/xlin23/
+          </a>
+        </li>
       </ul>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <!-- Embeds the 23_Xiaolin_resume.pdf in the page -->
+      <embed 
+        src="23_Xiaolin_resume.pdf" 
+        type="application/pdf" 
+        width="100%" 
+        height="800px"
+      />
+      <p>
+        If the PDF doesn’t display properly,
+        <a href="23_Xiaolin_resume.pdf" target="_blank" rel="noopener noreferrer">
+          click here to open it
+        </a>
+        in a new tab.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Dr. Your Name</p>
+    <p>&copy; 2025 Xiaolin Jiang</p>
   </footer>
 </body>
 </html>
